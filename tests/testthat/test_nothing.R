@@ -28,6 +28,6 @@ describe("Ejemplo 7.1", {
   })
   it("Sobre la cantidad sin pagar intereses pagando $315.47 anual", {
     obtained_saldo <- get_saldos(315.47)
-    expect_equal(obtained_saldo, 0, tolerance=1e-2)
+    expect_equal(obtained_saldo, 0, tolerance = 1e-2)
   })
 })
