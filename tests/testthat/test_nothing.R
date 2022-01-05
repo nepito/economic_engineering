@@ -6,3 +6,11 @@ describe("Get version of the module", {
     expect_true(version_are_equal)
   })
 })
+
+describe("return_one is loaded", {
+  it("return 1", {
+    expected <- 1
+    obtained <- return_one()
+    expect_equal(expected, obtained)
+  })
+})
