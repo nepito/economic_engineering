@@ -23,7 +23,11 @@ describe("Ejemplo 7.1", {
   })
   it("Sobre la cantidad sin pagar intereses pagando $250 anual", {
     obtained_saldo <- get_saldos(250)
-    pagaste_de_mas <- obtained_saldo > 0
-    expect_true(pagaste_de_mas)
+    pagaste_de_menos <- obtained_saldo > 0
+    expect_true(pagaste_de_menos)
+  })
+  it("Sobre la cantidad sin pagar intereses pagando $315.47 anual", {
+    obtained_saldo <- get_saldos(315.47)
+    expect_equal(obtained_saldo, 0, tolerance=1e-2)
   })
 })
