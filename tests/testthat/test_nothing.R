@@ -17,7 +17,6 @@ describe("return_one is loaded", {
 
 describe("Ejemplo 7.1", {
   it("Sobre la cantidad inicial pagando $350 anual", {
-    expected_saldo <- 14000
     obtained_saldo <- get_saldos()
     pagaste_de_mas <- obtained_saldo < 0
     expect_true(pagaste_de_mas)
