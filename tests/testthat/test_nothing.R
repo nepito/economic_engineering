@@ -31,3 +31,11 @@ describe("Ejemplo 7.1", {
     expect_equal(obtained_saldo, 0, tolerance = 1e-2)
   })
 })
+
+describe("Bisection", {
+  it("With positive output", {
+    expected_intervalue <- c(0, 50)
+    obtained_intervalue <- update_interval()
+    expect_equal(expected, obtained)
+  })
+})
