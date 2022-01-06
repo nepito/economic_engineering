@@ -36,6 +36,6 @@ describe("Bisection", {
   it("With positive output", {
     expected_intervalue <- c(0, 50)
     obtained_intervalue <- update_interval()
-    expect_equal(expected, obtained)
+    expect_equal(expected_intervalue, obtained_intervalue)
   })
 })
