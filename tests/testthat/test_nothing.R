@@ -57,3 +57,11 @@ describe("Bisection", {
     expect_equal(expected_intervalue, obtained_intervalue)
   })
 })
+
+describe("return_one is loaded", {
+  it("return 314.47", {
+    expected <- 314.47
+    obtained <- get_pay()
+    expect_equal(expected, obtained)
+  })
+})
