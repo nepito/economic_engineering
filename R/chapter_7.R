@@ -5,3 +5,7 @@ get_saldos <- function(pay) {
   }
   return(saldo)
 }
+
+update_interval <- function() {
+  return(c(0, 50))
+}
