@@ -6,7 +6,7 @@ get_saldos <- function(pay) {
   return(saldo)
 }
 
-update_interval <- function(intervalue, residuo) {
-  ifelse(residuo > 0, intervalue <- c(0, 50), intervalue <- c(50, 100))
-  return(intervalue)
+update_interval <- function(interval, residuo) {
+  ifelse(residuo > 0, interval[2] <- mean(interval), interval[1] <- mean(interval))
+  return(interval)
 }
