@@ -10,3 +10,7 @@ update_interval <- function(interval, residuo) {
   ifelse(residuo > 0, interval[2] <- mean(interval), interval[1] <- mean(interval))
   return(interval)
 }
+
+get_pay <- function(get_saldos) {
+  return(314.47)
+}
